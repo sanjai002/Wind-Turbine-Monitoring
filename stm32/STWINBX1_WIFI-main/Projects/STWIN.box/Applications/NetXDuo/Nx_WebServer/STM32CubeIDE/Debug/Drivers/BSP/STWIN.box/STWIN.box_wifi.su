@@ -1,0 +1,9 @@
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:205:6:WIFI_LPTIM_MspInit	240	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:337:6:WIFI_SPI_MspInit	264	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:470:6:WIFI_SPI_TxCpltCallback	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:524:6:WIFI_LPTIM_IC_CaptureCallback	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:442:6:WIFI_SPI_MspDeInit	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:243:6:WIFI_LPTIM_MspDeInit	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:506:6:WIFI_SPI_TxRxCpltCallback	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:488:6:WIFI_SPI_RxCpltCallback	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_wifi.c:71:9:BSP_WIFI_MX_GPIO_Init	88	static

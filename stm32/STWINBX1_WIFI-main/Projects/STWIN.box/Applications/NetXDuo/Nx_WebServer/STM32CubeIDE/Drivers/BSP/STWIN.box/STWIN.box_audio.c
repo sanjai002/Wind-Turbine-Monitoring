@@ -18,8 +18,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "STWIN.box_audio.h"
+#include "STWIN.box_audio.h"
 #include "STWIN.box_bus.h"
-#include "audio.h"
 
 /** @addtogroup BSP
 * @{

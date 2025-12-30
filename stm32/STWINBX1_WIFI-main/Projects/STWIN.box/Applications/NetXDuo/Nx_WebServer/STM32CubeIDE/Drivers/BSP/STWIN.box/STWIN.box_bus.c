@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 
 #include "STWIN.box_bus.h"
+#include "stm32u5xx_hal_i2c.h"
 #include "STWIN.box.h"
 #include "STWIN.box_errno.h"
 

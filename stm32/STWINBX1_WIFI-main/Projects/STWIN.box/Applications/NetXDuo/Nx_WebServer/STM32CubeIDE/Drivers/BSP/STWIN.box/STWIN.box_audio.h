@@ -28,6 +28,7 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "STWIN.box_conf.h"
 #include "STWIN.box.h"
+#include "stm32u5xx_hal_mdf.h"
 
 /** @addtogroup BSP
   * @{

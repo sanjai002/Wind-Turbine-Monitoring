@@ -79,6 +79,10 @@
 UINT MX_NetXDuo_Init(VOID *memory_ptr);
 
 /* USER CODE BEGIN EFP */
+/* Exported IP instance for other modules (e.g., telemetry) */
+extern NX_IP   IpInstance;
+extern ULONG   IpAddress;
+extern ULONG   NetMask;
 
 /* USER CODE END EFP */
 

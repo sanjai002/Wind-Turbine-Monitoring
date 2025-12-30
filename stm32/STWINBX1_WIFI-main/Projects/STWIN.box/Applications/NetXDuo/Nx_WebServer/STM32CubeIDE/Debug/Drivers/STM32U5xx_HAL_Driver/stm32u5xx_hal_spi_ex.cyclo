@@ -1,6 +1,0 @@
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:75:19:HAL_SPIEx_FlushRxFifo	28
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:114:19:HAL_SPIEx_EnableLockConfiguration	4
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:163:19:HAL_SPIEx_ConfigureUnderrun	5
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:220:19:HAL_SPIEx_SetConfigAutonomousMode	3
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:263:19:HAL_SPIEx_GetConfigAutonomousMode	3
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_spi_ex.c:297:19:HAL_SPIEx_ClearConfigAutonomousMode	3

@@ -1,0 +1,6 @@
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:177:13:FeatureExtraction_ThreadEntry	1144	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:57:6:FeatureExtraction_Init	64	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:121:6:FeatureExtraction_Start	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:142:11:FeatureExtraction_GetOutputQueue	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:151:10:FeatureExtraction_GetPacketCount	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/feature_extraction.c:160:10:FeatureExtraction_GetErrorCount	0	static

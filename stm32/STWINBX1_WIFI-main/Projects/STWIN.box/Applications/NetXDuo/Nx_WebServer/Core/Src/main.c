@@ -141,9 +141,11 @@ int main(void)
   BSP_LED_Init(LED_ORANGE);
 
   /* Enable SW2 for SDCard */
+#ifdef BSP_BC_Sw_Init
   BSP_BC_Sw_Init();
   BSP_BC_Sw_CmdSend(SW2_OA_ON);
   BSP_BC_Sw_CmdSend(SW2_OB_ON);
+#endif
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */

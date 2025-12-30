@@ -1,3 +1,5 @@
+/* Moved from Applications/NetXDuo/Nx_WebServer/STM32CubeIDE/Drivers/BSP/STWIN.box/STWIN.box_bc.h */
+// ...existing code...
 /**
  ******************************************************************************
  * @file    STWIN.box_bc.h
@@ -32,11 +34,11 @@
  * @{
  */
 
-/** @addtogroup STWIN_BOX 
+/** @addtogroup STWIN_BOX
  * @{
  */
 
-/** @addtogroup STWIN_BOX_BATTERY_CHARGER 
+/** @addtogroup STWIN_BOX_BATTERY_CHARGER
  * @{
  */
 

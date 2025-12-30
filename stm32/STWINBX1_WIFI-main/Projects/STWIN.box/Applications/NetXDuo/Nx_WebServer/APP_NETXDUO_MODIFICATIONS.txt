@@ -1,0 +1,162 @@
+/**
+ ******************************************************************************
+ * @file    APP_NETXDUO_MODIFICATIONS.txt
+ * @author  Wind Turbine Firmware Team
+ * @brief   EXACT code snippets to add to app_netxduo.c for integration
+ * @date    2025-01-02
+ ******************************************************************************
+ * 
+ * # MODIFICATIONS REQUIRED IN app_netxduo.c
+ * 
+ * ## MODIFICATION 1: Add Include
+ * 
+ * LOCATION: NetXDuo/App/app_netxduo.c, in the Includes section
+ * 
+ * Find the existing includes section:
+ * ```c
+ * /* USER CODE BEGIN Includes */
+ * #include "app_azure_rtos.h"
+ * /* USER CODE END Includes */
+ * ```
+ * 
+ * CHANGE TO:
+ * ```c
+ * /* USER CODE BEGIN Includes */
+ * #include "app_azure_rtos.h"
+ * #include "app_threadx.h"  // For App_Create_Startup_Thread()
+ * /* USER CODE END Includes */
+ * ```
+ * 
+ * ---
+ * 
+ * ## MODIFICATION 2: Create Startup Thread
+ * 
+ * LOCATION: NetXDuo/App/app_netxduo.c, INSIDE MX_NetXDuo_Init() function
+ * 
+ * Find the LAST CODE LINE in MX_NetXDuo_Init() before the final "return ret;":
+ * 
+ * Current code looks like:
+ * ```c
+ * UINT MX_NetXDuo_Init(VOID *memory_ptr)
+ * {
+ *   UINT ret = NX_SUCCESS;
+ *   TX_BYTE_POOL *byte_pool = (TX_BYTE_POOL*)memory_ptr;
+ * 
+ *    // ... many lines of code ...
+ * 
+ *   // The last line before this will be something like:
+ *   // Error_Handler();
+ *   // }
+ * #endif
+ *   // USER CODE END MX_NetXDuo_Init
+ * 
+ *   return ret;
+ * }
+ * ```
+ * 
+ * BEFORE THE LINE "return ret;", ADD THIS CODE:
+ * 
+ * ```c
+ *   /* USER CODE BEGIN MX_NetXDuo_Init_Startup */
+ *   
+ *   /* Create startup thread to initialize telemetry and worker threads
+ *      after DHCP assigns IP address */
+ *   ret = App_Create_Startup_Thread(byte_pool);
+ *   if (ret != TX_SUCCESS)
+ *   {
+ *     printf("Startup thread creation failed: 0x%02X\n", ret);
+ *     Error_Handler();
+ *   }
+ *   printf("Startup thread created\n");
+ *   
+ *   /* USER CODE END MX_NetXDuo_Init_Startup */
+ * ```
+ * 
+ * EXACT PLACEMENT (visual guide):
+ * ```c
+ * #endif
+ *   /* USER CODE END MX_NetXDuo_Init */
+ * 
+ *   /* ADD NEW CODE HERE: */
+ *   /* USER CODE BEGIN MX_NetXDuo_Init_Startup */
+ *   ret = App_Create_Startup_Thread(byte_pool);
+ *   if (ret != TX_SUCCESS)
+ *   {
+ *     printf("Startup thread creation failed: 0x%02X\n", ret);
+ *     Error_Handler();
+ *   }
+ *   printf("Startup thread created\n");
+ *   /* USER CODE END MX_NetXDuo_Init_Startup */
+ *   
+ *   return ret;
+ * }
+ * ```
+ * 
+ * ---
+ * 
+ * # VERIFICATION STEPS
+ * 
+ * After making the above changes:
+ * 
+ * 1. Save app_netxduo.c
+ * 2. Build project: Project → Build Project (Ctrl+B)
+ * 3. Verify no compilation errors
+ * 
+ * Expected build result:
+ * ```
+ * Building target: Nx_WebServer.elf
+ * Linking object files...
+ * ...
+ * Build completed successfully
+ * ```
+ * 
+ * If build fails with "undefined reference to 'App_Create_Startup_Thread'":
+ * - Verify app_threadx.h is included (Modification 1)
+ * - Verify app_threadx.c file is in project
+ * - Clean and rebuild: Project → Clean → Project → Build
+ * 
+ * If build fails with other linker errors:
+ * - Check that all new .c files are added to the project:
+ *   * audio_acquisition.c
+ *   * feature_extraction.c
+ *   * audio_features.c
+ *   * app_telemetry.c
+ * - Right-click project → Properties → C/C++ Build → Source
+ * - Verify all source files are listed
+ * 
+ * ---
+ * 
+ * # SUMMARY OF CHANGES
+ * 
+ * | File | Change Type | Location | What |
+ * |------|-------------|----------|------|
+ * | app_netxduo.c | Include | Includes section | Add #include "app_threadx.h" |
+ * | app_netxduo.c | Code | End of MX_NetXDuo_Init() | Call App_Create_Startup_Thread() |
+ * | app_netxduo.h | Declaration | Exported functions | Already added by us (extern NX_IP) |
+ * | app_threadx.c | Modified | App_Create_Startup_Thread() | Already implemented by us |
+ * | app_threadx.h | Declaration | Already added by us | Function prototype |
+ * 
+ * After these two changes, all integration is complete!
+ * 
+ * ---
+ * 
+ * # TESTING THE INTEGRATION
+ * 
+ * After successful build and programming:
+ * 
+ * 1. Open serial console (115200 baud)
+ * 2. Press RESET button on STWINBX1
+ * 3. Watch for initialization messages (should see all subsystems start)
+ * 4. If you see errors, check the console output to identify which subsystem failed
+ * 
+ * Success indicators:
+ * - "Startup thread created" appears in console
+ * - "All subsystems initialized successfully" message appears
+ * - Green LED blinks (normal operation indicator)
+ * - UDP packets arrive at receiver (port 5000)
+ * 
+ * ---
+ * **Document Version**: 1.0
+ * **Last Updated**: 2025-01-02
+ * 
+ */
