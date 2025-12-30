@@ -1,0 +1,20 @@
+Middlewares/NetXDuo/NX Core/nx_arp_queue_process.o: \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nx_arp_queue_process.c \
+ ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
+ ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
+ ../../Core/Inc/tx_user.h \
+ ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h \
+ ../../../../../../../Middlewares/ST/netxduo/ports/cortex_m33/gnu/inc/nx_port.h \
+ ../../NetXDuo/App/nx_user.h \
+ ../../../../../../../Middlewares/ST/threadx/common/inc/tx_trace.h \
+ ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_arp.h \
+ ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h
+../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h:
+../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:
+../../Core/Inc/tx_user.h:
+../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h:
+../../../../../../../Middlewares/ST/netxduo/ports/cortex_m33/gnu/inc/nx_port.h:
+../../NetXDuo/App/nx_user.h:
+../../../../../../../Middlewares/ST/threadx/common/inc/tx_trace.h:
+../../../../../../../Middlewares/ST/netxduo/common/inc/nx_arp.h:
+../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h:
