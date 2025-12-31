@@ -1,0 +1,73 @@
+# STM32 / STM32CubeIDE / Eclipse
+.metadata/
+.settings/
+.project
+.cproject
+*.launch
+*.log
+
+# CubeMX
+*.ioc
+
+# Build output folders
+Debug/
+Release/
+**/Debug/
+**/Release/
+
+# GNU Arm / GCC artifacts
+*.o
+*.d
+*.su
+*.a
+*.lib
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.axf
+*.out
+*.srec
+
+# Linker and build intermediates
+*.ld.bak
+*.icf.bak
+*.sct.bak
+objects.list
+objects.mk
+sources.mk
+**/objects.list
+**/objects.mk
+**/sources.mk
+
+# STM32CubeIDE generated build subfolders
+**/Application/User/**/Debug/
+
+# IAR EWARM
+EWARM/Debug/
+EWARM/Release/
+*.ewd
+*.ewp
+*.eww
+
+# Keil / MDK-ARM
+*.uvprojx
+*.uvoptx
+*.uvguix
+*.scvd
+RTE/
+
+# VS Code
+.vscode/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+*~
+
+# Performance / analysis artifacts (seen in this repo)
+*.cyclo
+
+# Fuse hidden files (Linux/macOS)
+.fuse_hidden*

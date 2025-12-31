@@ -24,6 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include   "app_azure_rtos.h"
+#include   "app_telemetry.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -396,6 +397,49 @@ UINT webserver_request_notify_callback(NX_WEB_HTTP_SERVER *server_ptr, UINT requ
   {
     nx_tcp_info_get(&IpInstance, NULL, &total_bytes_sent, NULL, &total_bytes_received, NULL, NULL, NULL, &connections, &disconnections, NULL, NULL);
     sprintf(data, "%lu,%lu,%lu,%lu", total_bytes_received, total_bytes_sent, connections, disconnections);
+  }
+  else if (strcmp(resource, "/GetMemsData") == 0)
+  {
+    AudioTelemetryPacket_t pkt;
+    if (Telemetry_GetLastPacket(&pkt))
+    {
+      /* CSV format:
+       * 0 seq
+       * 1 timestamp_ms
+       * 2 uptime_sec
+       * 3 rms_raw
+       * 4 spl_db
+       * 5 peak_amplitude
+       * 6 zcr_rate
+       * 7 status_flags
+       * 8 error_count
+       * 9-16 fft_band[0..7]
+       */
+      sprintf(data,
+              "%u,%lu,%lu,%.3f,%.2f,%lu,%.5f,%u,%u,%lu,%lu,%lu,%lu,%lu,%lu,%lu,%lu",
+              (unsigned)pkt.seq_number,
+              (unsigned long)pkt.timestamp_ms,
+              (unsigned long)pkt.uptime_sec,
+              (double)pkt.rms_raw,
+              (double)pkt.spl_db,
+              (unsigned long)pkt.peak_amplitude,
+              (double)pkt.zcr_rate,
+              (unsigned)pkt.status_flags,
+              (unsigned)pkt.error_count,
+              (unsigned long)pkt.fft_band[0],
+              (unsigned long)pkt.fft_band[1],
+              (unsigned long)pkt.fft_band[2],
+              (unsigned long)pkt.fft_band[3],
+              (unsigned long)pkt.fft_band[4],
+              (unsigned long)pkt.fft_band[5],
+              (unsigned long)pkt.fft_band[6],
+              (unsigned long)pkt.fft_band[7]);
+    }
+    else
+    {
+      /* Not ready yet. */
+      sprintf(data, "NA");
+    }
   }
   else if(strcmp(resource, "/GetNetInfo") == 0)
   {

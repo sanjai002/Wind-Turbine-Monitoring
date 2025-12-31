@@ -43,6 +43,10 @@ typedef struct
 /* Private variables ---------------------------------------------------------*/
 static Telemetry_Context_t telemetry_ctx = {0};
 
+/* Cache the latest packet for the web dashboard (best-effort, no blocking). */
+static AudioTelemetryPacket_t telemetry_last_pkt;
+static volatile uint8_t telemetry_last_pkt_valid = 0;
+
 /* Private function prototypes -----------------------------------------------*/
 static void Telemetry_ThreadEntry(ULONG thread_input);
 static UINT Telemetry_CreateSocket(void);
@@ -177,6 +181,21 @@ uint32_t Telemetry_GetErrorCount(void)
 }
 
 /**
+  * @brief  Copy out the latest telemetry packet (for HTTP dashboard).
+  * @param  out: destination buffer
+  * @retval 1 if a valid packet was copied, 0 if none available yet
+  */
+uint8_t Telemetry_GetLastPacket(AudioTelemetryPacket_t *out)
+{
+    if (!out || !telemetry_last_pkt_valid)
+        return 0;
+
+    /* Best-effort copy, allow race with telemetry thread. */
+    memcpy(out, &telemetry_last_pkt, sizeof(*out));
+    return 1;
+}
+
+/**
   * @brief  Check if socket is ready
   * @retval 1 if ready, 0 if not
   */
@@ -200,7 +219,7 @@ static void Telemetry_ThreadEntry(ULONG thread_input)
     (void)thread_input;
     AudioTelemetryPacket_t pkt;
     UINT status;
-    ULONG signals;
+    /* Reserved for future event-driven refactor (currently unused). */
     
     while (1)
     {
@@ -235,6 +254,10 @@ static void Telemetry_ThreadEntry(ULONG thread_input)
         
         /* Transmit the packet */
         status = Telemetry_TransmitPacket(&pkt);
+
+    /* Update cached packet for the dashboard (even if TX fails). */
+    memcpy(&telemetry_last_pkt, &pkt, sizeof(telemetry_last_pkt));
+    telemetry_last_pkt_valid = 1;
         
         if (status == NX_SUCCESS)
         {
@@ -265,8 +288,10 @@ static UINT Telemetry_CreateSocket(void)
     status = nx_udp_socket_create(telemetry_ctx.ip_instance,
                                   &telemetry_ctx.udp_socket,
                                   "Telemetry Socket",
+                                  NX_IP_NORMAL,
                                   NX_DONT_FRAGMENT,
-                                  NX_IP_TIME_TO_LIVE);
+                                  NX_IP_TIME_TO_LIVE,
+                                  2048);
     
     if (status != NX_SUCCESS)
     {

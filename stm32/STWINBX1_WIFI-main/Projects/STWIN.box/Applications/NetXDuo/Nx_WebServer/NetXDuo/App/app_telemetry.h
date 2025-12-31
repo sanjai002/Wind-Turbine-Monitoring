@@ -91,6 +91,13 @@ uint32_t Telemetry_GetTxCount(void);
 uint32_t Telemetry_GetErrorCount(void);
 
 /**
+ * @brief Get a copy of the most recent AudioTelemetryPacket_t.
+ * @param out: output buffer to fill
+ * @retval 1 if a packet is available, 0 otherwise
+ */
+uint8_t Telemetry_GetLastPacket(AudioTelemetryPacket_t *out);
+
+/**
  * @brief Check if socket is connected/ready
  * @retval 1 if ready, 0 if not
  */

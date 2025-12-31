@@ -31,6 +31,22 @@ RM := rm -rf
 -include Application/User/AZURE_RTOS/App/subdir.mk
 -include objects.mk
 
+# Re-generate the linker input list from the current $(OBJS).
+# CubeIDE links via @"objects.list".
+#
+# IMPORTANT: $(OBJS) contains escaped spaces (e.g. "NX\ Core") because
+# Cube-generated folder names include spaces. A naive "tr ' ' '\n'" will
+# split those paths and break the link step.
+objects.list: $(OBJS)
+	@rm -f $@
+	@# The linker "@file" syntax splits on whitespace; paths that contain spaces must be quoted per line.
+	@# $(OBJS) contains make-escaped spaces (e.g. NX\ Core). We convert those to real spaces, then wrap each path in quotes.
+	@set -f; \
+	for f in $(OBJS); do \
+		p=`printf '%s' "$$f" | sed -e 's/\\ / /g'`; \
+		printf '"%s"\n' "$$p" >> $@; \
+	done
+
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(S_DEPS)),)
 -include $(S_DEPS)

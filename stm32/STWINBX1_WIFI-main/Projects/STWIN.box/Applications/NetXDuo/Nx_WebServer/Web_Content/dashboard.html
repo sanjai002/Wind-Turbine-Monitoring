@@ -109,7 +109,7 @@
                                                 <span class="number" id="nx_sent" style="font-size:medium">Total Bytes Sent : 0</span><br>
                                                 <span class="number" id="nx_received" style="font-size:medium">Total Bytes received : 0</span> <br>
                                                 <span class="number" id="nx_connect" style="font-size:medium">Total Connections : 0</span><br>
-                                                <span class="number" id="nx_received" style="font-size:medium">Total Disconnections : 0</span>
+                                                <span class="number" id="nx_disconnect" style="font-size:medium">Total Disconnections : 0</span>
                                             </div>
                                         </div>
                                     </div>
@@ -117,6 +117,82 @@
                                         <hr />
                                         <div class="stats">
                                             <i class="fas fa-network-wired"></i> NetXDuo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 page-header" >
+                            <h2 class="page-title" style="margin-left: 10px; color: darkblue;">Digital MEMS / Audio Acquisition</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="icon-big text-left">
+                                                <i class="violet fas fa-microphone fa-lg"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">Live features</p>
+                                                <span class="number" id="mems_status" style="font-size:medium">Status : Waiting for first packet...</span><br>
+                                                <span class="number" id="mems_seq" style="font-size:medium">Seq : 0</span><br>
+                                                <span class="number" id="mems_uptime" style="font-size:medium">Uptime (s) : 0</span><br>
+                                                <span class="number" id="mems_rms" style="font-size:medium">RMS : 0</span><br>
+                                                <span class="number" id="mems_spl" style="font-size:medium">SPL (dB) : 0</span><br>
+                                                <span class="number" id="mems_peak" style="font-size:medium">Peak : 0</span><br>
+                                                <span class="number" id="mems_zcr" style="font-size:medium">ZCR : 0</span><br>
+                                                <span class="number" id="mems_err" style="font-size:medium">Errors : 0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <i class="fas fa-wave-square"></i> Features via HTTP
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="icon-big text-left">
+                                                <i class="violet fas fa-chart-bar fa-lg"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">FFT bands (0..7)</p>
+                                                <span class="number" id="mems_fft0" style="font-size:medium">B0 : 0</span><br>
+                                                <span class="number" id="mems_fft1" style="font-size:medium">B1 : 0</span><br>
+                                                <span class="number" id="mems_fft2" style="font-size:medium">B2 : 0</span><br>
+                                                <span class="number" id="mems_fft3" style="font-size:medium">B3 : 0</span><br>
+                                                <span class="number" id="mems_fft4" style="font-size:medium">B4 : 0</span><br>
+                                                <span class="number" id="mems_fft5" style="font-size:medium">B5 : 0</span><br>
+                                                <span class="number" id="mems_fft6" style="font-size:medium">B6 : 0</span><br>
+                                                <span class="number" id="mems_fft7" style="font-size:medium">B7 : 0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <i class="fas fa-signal"></i> Spectrum snapshot
                                         </div>
                                     </div>
                                 </div>
