@@ -1,5 +1,5 @@
 Middlewares/NetXDuo/NX Core/nx_ip_max_payload_size_find.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nx_ip_max_payload_size_find.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nx_ip_max_payload_size_find.c \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \

@@ -1,7 +1,7 @@
 Application/User/AZURE_RTOS/App/app_azure_rtos.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.c \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.h \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos_config.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos_config.h \
  ../../Core/Inc/app_threadx.h \
  ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
@@ -77,8 +77,8 @@ Application/User/AZURE_RTOS/App/app_azure_rtos.o: \
  ../../../../../../../Middlewares/ST/netxduo/addons/web/nx_tcpserver.h \
  ../../../../../../../Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h \
  ../../../../../../../Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.h:
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos_config.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/AZURE_RTOS/App/app_azure_rtos_config.h:
 ../../Core/Inc/app_threadx.h:
 ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h:
 ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:

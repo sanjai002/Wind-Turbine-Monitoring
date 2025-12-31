@@ -1,6 +1,6 @@
 Drivers/BSP/Components/mx_wifi/core/mx_address.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.h \
  ../../../../../../../Drivers/BSP/Components/mx_wifi/mx_wifi.h \
  ../../Core/Inc/mx_wifi_conf.h \
  ../../NetXDuo/Target/mx_wifi_azure_rtos_conf.h \
@@ -67,7 +67,7 @@ Drivers/BSP/Components/mx_wifi/core/mx_address.o: \
  ../../FileX/App/fx_user.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_sd.h \
  ../../../../../../../Drivers/BSP/Components/mx_wifi/core/mx_address.h
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.h:
 ../../../../../../../Drivers/BSP/Components/mx_wifi/mx_wifi.h:
 ../../Core/Inc/mx_wifi_conf.h:
 ../../NetXDuo/Target/mx_wifi_azure_rtos_conf.h:

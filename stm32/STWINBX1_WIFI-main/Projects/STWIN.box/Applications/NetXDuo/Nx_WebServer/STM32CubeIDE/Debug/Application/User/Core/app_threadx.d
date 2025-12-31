@@ -1,5 +1,5 @@
 Application/User/Core/app_threadx.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c \
  ../../Core/Inc/app_threadx.h \
  ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \

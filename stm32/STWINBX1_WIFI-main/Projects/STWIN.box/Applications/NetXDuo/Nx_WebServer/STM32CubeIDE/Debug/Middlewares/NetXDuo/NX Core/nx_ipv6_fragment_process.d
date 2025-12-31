@@ -1,5 +1,5 @@
 Middlewares/NetXDuo/NX Core/nx_ipv6_fragment_process.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nx_ipv6_fragment_process.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nx_ipv6_fragment_process.c \
  ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \

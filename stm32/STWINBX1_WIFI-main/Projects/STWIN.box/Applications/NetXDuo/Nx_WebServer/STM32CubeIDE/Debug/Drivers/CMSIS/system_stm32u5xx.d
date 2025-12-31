@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32u5xx.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/system_stm32u5xx.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/system_stm32u5xx.c \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32U5xx/Include/stm32u5xx.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32U5xx/Include/stm32u585xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm33.h \

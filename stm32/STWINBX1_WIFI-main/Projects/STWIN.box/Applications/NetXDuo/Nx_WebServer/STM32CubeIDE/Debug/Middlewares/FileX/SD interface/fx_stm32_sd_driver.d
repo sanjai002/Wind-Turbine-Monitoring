@@ -1,5 +1,5 @@
 Middlewares/FileX/SD interface/fx_stm32_sd_driver.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/filex/common/drivers/fx_stm32_sd_driver.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/filex/common/drivers/fx_stm32_sd_driver.c \
  ../../FileX/Target/fx_stm32_sd_driver.h \
  ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h \
  ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h \

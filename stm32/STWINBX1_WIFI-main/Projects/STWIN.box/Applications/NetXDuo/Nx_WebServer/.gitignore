@@ -9,11 +9,12 @@
 # CubeMX
 *.ioc
 
-# Build output folders
+# Build output folders (Debug ignored, but Release/ kept for distributable ELF)
 Debug/
-Release/
 **/Debug/
-**/Release/
+# Release/ folder is tracked for firmware distribution
+!Release/
+!Release/*.elf
 
 # GNU Arm / GCC artifacts
 *.o
@@ -21,7 +22,7 @@ Release/
 *.su
 *.a
 *.lib
-*.elf
+# *.elf is ignored in Debug/ but allowed in Release/
 *.bin
 *.hex
 *.map

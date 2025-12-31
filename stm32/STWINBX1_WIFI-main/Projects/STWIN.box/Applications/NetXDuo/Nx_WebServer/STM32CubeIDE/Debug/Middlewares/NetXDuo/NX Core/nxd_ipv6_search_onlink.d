@@ -1,5 +1,5 @@
 Middlewares/NetXDuo/NX Core/nxd_ipv6_search_onlink.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nxd_ipv6_search_onlink.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nxd_ipv6_search_onlink.c \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \

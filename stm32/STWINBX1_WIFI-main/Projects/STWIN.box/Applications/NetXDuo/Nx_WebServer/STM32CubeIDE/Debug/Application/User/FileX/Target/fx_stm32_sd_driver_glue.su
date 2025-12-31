@@ -1,7 +1,7 @@
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:30:5:fx_stm32_sd_init	8	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:52:5:fx_stm32_sd_deinit	0	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:67:5:fx_stm32_sd_get_status	8	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:90:5:fx_stm32_sd_read_blocks	8	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:112:5:fx_stm32_sd_write_blocks	8	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:129:6:BSP_SD_WriteCpltCallback	0	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:139:6:BSP_SD_ReadCpltCallback	0	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:30:5:fx_stm32_sd_init	8	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:52:5:fx_stm32_sd_deinit	0	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:67:5:fx_stm32_sd_get_status	8	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:90:5:fx_stm32_sd_read_blocks	8	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:112:5:fx_stm32_sd_write_blocks	8	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:129:6:BSP_SD_WriteCpltCallback	0	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c:139:6:BSP_SD_ReadCpltCallback	0	static

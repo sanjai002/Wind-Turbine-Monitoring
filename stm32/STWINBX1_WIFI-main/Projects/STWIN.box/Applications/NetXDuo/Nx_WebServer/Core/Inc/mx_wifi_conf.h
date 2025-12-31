@@ -68,8 +68,8 @@ int32_t mxwifi_probe(void **ll_drv_context);
 //#define MX_WIFI_IO_DEBUG
 
 
-#define MX_WIFI_PRODUCT_NAME                        ("MXCHIP-WIFI")
-#define MX_WIFI_PRODUCT_ID                          ("EMW3080B")
+#define MX_WIFI_PRODUCT_NAME                        ("JJRPI")
+#define MX_WIFI_PRODUCT_ID                          ("123456789")
 
 #ifndef MX_WIFI_UART_BAUDRATE
 #define MX_WIFI_UART_BAUDRATE                       (115200*2)

@@ -1,6 +1,6 @@
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:324:13:App_Main_Thread_Entry	24	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:317:13:ip_address_change_notify_callback	0	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:362:6:webserver_request_notify_callback	776	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:561:6:LedThread_Entry	8	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:515:6:nx_server_thread_entry	32	static
-/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:115:6:MX_NetXDuo_Init	56	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:515:6:nx_server_thread_entry	32	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:324:13:App_Main_Thread_Entry	24	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:317:13:ip_address_change_notify_callback	0	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:362:6:webserver_request_notify_callback	784	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:561:6:LedThread_Entry	8	static
+/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c:115:6:MX_NetXDuo_Init	56	static

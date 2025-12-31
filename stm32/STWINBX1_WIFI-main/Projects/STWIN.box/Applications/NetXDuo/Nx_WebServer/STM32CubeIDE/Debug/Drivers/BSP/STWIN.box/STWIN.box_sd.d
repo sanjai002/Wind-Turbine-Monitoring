@@ -1,6 +1,6 @@
 Drivers/BSP/STWIN.box/STWIN.box_sd.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.c \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.h \
  ../../Core/Inc/STWIN.box_conf.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
  ../../Core/Inc/stm32u5xx_hal_conf.h \
@@ -46,8 +46,8 @@ Drivers/BSP/STWIN.box/STWIN.box_sd.o: \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_bus.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_errno.h \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_errno.h
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.h:
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_errno.h
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_sd.h:
 ../../Core/Inc/STWIN.box_conf.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h:
 ../../Core/Inc/stm32u5xx_hal_conf.h:
@@ -93,4 +93,4 @@ Drivers/BSP/STWIN.box/STWIN.box_sd.o: \
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_bus.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_errno.h:
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_errno.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/STWIN.box/STWIN.box_errno.h:

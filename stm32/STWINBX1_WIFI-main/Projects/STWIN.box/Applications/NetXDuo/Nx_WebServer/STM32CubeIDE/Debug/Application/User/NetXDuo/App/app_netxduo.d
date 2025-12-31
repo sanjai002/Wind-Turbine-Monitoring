@@ -1,6 +1,6 @@
 Application/User/NetXDuo/App/app_netxduo.o: \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.c \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.h \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \
@@ -79,9 +79,9 @@ Application/User/NetXDuo/App/app_netxduo.o: \
  ../../AZURE_RTOS/App/app_azure_rtos.h \
  ../../AZURE_RTOS/App/app_azure_rtos_config.h \
  ../../Core/Inc/app_threadx.h ../../NetXDuo/App/app_netxduo.h \
- /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_telemetry.h \
+ /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_telemetry.h \
  ../../Core/Inc/audio_features.h
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_netxduo.h:
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h:
 ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:
 ../../Core/Inc/tx_user.h:
@@ -162,5 +162,5 @@ Application/User/NetXDuo/App/app_netxduo.o: \
 ../../AZURE_RTOS/App/app_azure_rtos_config.h:
 ../../Core/Inc/app_threadx.h:
 ../../NetXDuo/App/app_netxduo.h:
-/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_telemetry.h:
+/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/NetXDuo/App/app_telemetry.h:
 ../../Core/Inc/audio_features.h:
