@@ -190,7 +190,7 @@ static void FeatureExtraction_ThreadEntry(ULONG thread_input)
         }
         
         /* Wait for audio frame from acquisition queue (blocking, 100ms timeout) */
-        status = tx_queue_receive(&feature_ctx.input_queue,
+        status = tx_queue_receive(feature_ctx.input_queue,
                                   (VOID *)&frame,
                                   100);  /* 100ms timeout */
         
@@ -321,14 +321,18 @@ static int FeatureExtraction_ProcessBuffer(FeatureBuffer_t *buf,
     pkt->spl_db = AudioFeatures_CalculateSPL(pkt->rms_raw, 20e-6f);
     
     /* 5. FFT Magnitude Bands */
+    uint32_t fft_bands_tmp[FFT_BANDS];
     int fft_result = AudioFeatures_ComputeFFTBands(buf->accumulated_samples,
-                                                   pkt->fft_band);
+                                                   fft_bands_tmp);
     
     if (fft_result != 0)
     {
         /* FFT computation failed, but continue with available data */
-        memset(pkt->fft_band, 0, sizeof(pkt->fft_band));
+        memset(fft_bands_tmp, 0, sizeof(fft_bands_tmp));
     }
+
+    /* Copy into packed packet field as a plain byte copy to avoid alignment issues. */
+    memcpy(pkt->fft_band, fft_bands_tmp, sizeof(pkt->fft_band));
     
     return 0;
 }

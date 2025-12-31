@@ -207,7 +207,6 @@ static void AudioAcquisition_ThreadEntry(ULONG thread_input)
 {
     (void)thread_input;
     AudioFrame_t frame;
-    uint32_t frame_time_ticks;
     
     while (1)
     {
@@ -268,7 +267,7 @@ static void AudioAcquisition_ThreadEntry(ULONG thread_input)
   * 
   * Called by HAL when DMA transfer completes (half or full)
   */
-void AudioAcquisition_DMA_Complete_Callback(void)
+__attribute__((unused)) void AudioAcquisition_DMA_Complete_Callback(void)
 {
     /* Switch buffer pointers for next DMA transfer */
     audio_acq_ctx.current_buffer = (audio_acq_ctx.current_buffer == 0) ? 1 : 0;
@@ -281,7 +280,7 @@ void AudioAcquisition_DMA_Complete_Callback(void)
   * @brief  DMA error callback
   * @retval None
   */
-void AudioAcquisition_DMA_Error_Callback(void)
+__attribute__((unused)) void AudioAcquisition_DMA_Error_Callback(void)
 {
     audio_acq_ctx.error_count++;
     audio_acq_ctx.is_active = 0;  /* Stop capture on critical error */
