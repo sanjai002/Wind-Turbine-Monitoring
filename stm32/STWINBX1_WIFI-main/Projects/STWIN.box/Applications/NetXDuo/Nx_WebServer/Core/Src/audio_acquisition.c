@@ -14,7 +14,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "audio_acquisition.h"
 #include "main.h"
+#include "STWIN.box_audio.h"
 #include <string.h>
+#include <limits.h>
 
 /* Private defines -----------------------------------------------------------*/
 /*
@@ -133,21 +135,19 @@ UINT AudioAcquisition_Start(void)
     /* Record boot timestamp for relative timing */
     boot_time_ms = tx_time_get();  /* ThreadX tick count */
     
-    /* Start DMA-based DFSDM capture using circular double buffering */
-    /* HAL call: HAL_DFSDM_FilterRegularStart_DMA(filter, buffer, length) */
-    /* This assumes CubeMX has configured PDM input on DFSDM channel 1, filter 0 */
+    /* Initialize BSP audio */
+    BSP_AUDIO_Init_t audio_init;
+    audio_init.Device = ONBOARD_DIGITAL_MIC_MASK;  /* Use digital microphone */
+    audio_init.SampleRate = AUDIO_FREQUENCY_16K;  /* 16 kHz */
+    audio_init.BitsPerSample = 16;  /* 16 bits */
+    audio_init.ChannelsNbr = 1;  /* Mono */
+    audio_init.Volume = 100;  /* Full volume */
     
-    /* Note: DFSDM configuration must be done in MX_DFSDM_Init() (via CubeMX) */
-    /* This code only starts the configured DMA capture */
-    
-    /*
-     * CRITICAL: DFSDM requires:
-     * - PDM microphone clock input on GPIO
-     * - PDM data input on DFSDM channel
-     * - DFSDM filter configured in fast mode
-     * - DMA configured for circular transfer
-     * See STM32CubeMX project configuration
-     */
+    if (BSP_AUDIO_IN_Init(0, &audio_init) != BSP_ERROR_NONE)
+    {
+        audio_acq_ctx.error_count++;
+        return TX_NOT_DONE;
+    }
     
     audio_acq_ctx.is_active = 1;
     
@@ -199,26 +199,30 @@ uint32_t AudioAcquisition_GetErrorCount(void)
   * @retval None
   * 
   * This thread:
-  * 1. Waits for DFSDM DMA completion callbacks
-  * 2. Converts raw DFSDM output to PCM16
+  * 1. Captures audio frames using BSP audio functions
+  * 2. Converts raw audio data to PCM16
   * 3. Queues completed frames for feature extraction
   */
 static void AudioAcquisition_ThreadEntry(ULONG thread_input)
 {
     (void)thread_input;
     AudioFrame_t frame;
+    uint8_t audio_buffer[AUDIO_FRAME_SIZE * 2];  /* 16-bit samples = 2 bytes per sample */
     
     while (1)
     {
-        /* Wait for DFSDM DMA completion or error event */
-        /* In practice, this uses a semaphore set by DMA callbacks */
-        /* For now, simulated with periodic polling */
-        
-        tx_thread_sleep(32);  /* ~2ms wait (AUDIO_FRAME_SIZE = 512 @ 16kHz = 32ms) */
-        
         if (!audio_acq_ctx.is_active)
         {
             tx_thread_suspend(&audio_acq_ctx.thread);
+            continue;
+        }
+        
+        /* Capture one frame of audio data */
+        /* AUDIO_FRAME_SIZE = 512 samples, each sample is 16-bit = 1024 bytes */
+        if (BSP_AUDIO_IN_Record(0, audio_buffer, AUDIO_FRAME_SIZE * 2) != BSP_ERROR_NONE)
+        {
+            audio_acq_ctx.error_count++;
+            tx_thread_sleep(32);  /* Wait before retry */
             continue;
         }
         
@@ -232,20 +236,26 @@ static void AudioAcquisition_ThreadEntry(ULONG thread_input)
         /* ThreadX tick rate: typically 1000 ticks/sec = 1ms per tick */
         frame.timestamp_ms = ticks_elapsed;  /* Adjust based on actual tick rate */
         
-        /* Placeholder: In actual implementation, copy from DMA buffer
-         * Example:
-         * if (audio_acq_ctx.current_buffer == 0)
-         *     memcpy(frame.samples, audio_acq_ctx.dma_buffer_a, sizeof(frame.samples));
-         * else
-         *     memcpy(frame.samples, audio_acq_ctx.dma_buffer_b, sizeof(frame.samples));
-         */
+        /* Convert raw audio buffer to int16_t samples */
+        for (uint32_t i = 0; i < AUDIO_FRAME_SIZE; i++)
+        {
+            /* BSP returns data as uint8_t array, convert to int16_t */
+            frame.samples[i] = (int16_t)((audio_buffer[i*2+1] << 8) | audio_buffer[i*2]);
+        }
         
-        /* Check for errors (would be set by DMA callbacks) */
+        /* Check for errors (clipping detection) */
+        for (uint32_t i = 0; i < AUDIO_FRAME_SIZE; i++)
+        {
+            if (frame.samples[i] == INT16_MIN || frame.samples[i] == INT16_MAX)
+            {
+                frame.error_flags |= AUDIO_ACQ_ERROR_CLIPPING;
+                break;
+            }
+        }
+        
         if (frame.error_flags)
         {
             audio_acq_ctx.error_count++;
-            if (audio_acq_ctx.error_count > 1000)
-                audio_acq_ctx.error_count = 0;  /* Prevent overflow */
         }
         
         /* Send frame to feature extraction queue (non-blocking, drop if full) */
@@ -258,6 +268,10 @@ static void AudioAcquisition_ThreadEntry(ULONG thread_input)
             /* Queue full: frame dropped, increment error counter */
             audio_acq_ctx.error_count++;
         }
+        
+        /* Frame rate: 512 samples @ 16kHz = 32ms per frame */
+        /* Small delay to prevent busy-waiting */
+        tx_thread_sleep(1);
     }
 }
 

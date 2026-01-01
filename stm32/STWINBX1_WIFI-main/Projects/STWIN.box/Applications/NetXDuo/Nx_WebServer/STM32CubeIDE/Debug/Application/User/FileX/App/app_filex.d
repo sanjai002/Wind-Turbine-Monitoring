@@ -1,6 +1,6 @@
 Application/User/FileX/App/app_filex.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.c \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.h \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.h \
  ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h \
  ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h \
  ../../FileX/App/fx_user.h \
@@ -49,6 +49,7 @@ Application/User/FileX/App/app_filex.o: \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
+ ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_def.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box.h \
  ../../Core/Inc/STWIN.box_conf.h \
@@ -78,7 +79,7 @@ Application/User/FileX/App/app_filex.o: \
  ../../../../../../../Middlewares/ST/netxduo/addons/web/nx_tcpserver.h \
  ../../../../../../../Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h \
  ../../../../../../../Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.h:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/App/app_filex.h:
 ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h:
 ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h:
 ../../FileX/App/fx_user.h:
@@ -128,6 +129,7 @@ Application/User/FileX/App/app_filex.o: \
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
+../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_def.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box.h:
 ../../Core/Inc/STWIN.box_conf.h:

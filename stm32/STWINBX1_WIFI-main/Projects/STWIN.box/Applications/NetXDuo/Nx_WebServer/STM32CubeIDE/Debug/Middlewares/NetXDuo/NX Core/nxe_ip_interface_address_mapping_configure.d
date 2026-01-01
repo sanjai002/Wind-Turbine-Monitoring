@@ -1,5 +1,5 @@
 Middlewares/NetXDuo/NX Core/nxe_ip_interface_address_mapping_configure.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nxe_ip_interface_address_mapping_configure.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/src/nxe_ip_interface_address_mapping_configure.c \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \

@@ -1,2 +1,2 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c:211:9:mx_aton_r	40	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c:225:12:mx_ntoa	48	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c:211:9:mx_aton_r	32	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_address.c:225:12:mx_ntoa	48	static

@@ -1,5 +1,5 @@
 Drivers/STM32U5xx_HAL_Driver/stm32u5xx_hal_gpio.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_gpio.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_gpio.c \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
  ../../Core/Inc/stm32u5xx_hal_conf.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_rcc.h \
@@ -41,7 +41,8 @@ Drivers/STM32U5xx_HAL_Driver/stm32u5xx_hal_gpio.o: \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_tim_ex.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h \
- ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h
+ ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
+ ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h:
 ../../Core/Inc/stm32u5xx_hal_conf.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_rcc.h:
@@ -84,3 +85,4 @@ Drivers/STM32U5xx_HAL_Driver/stm32u5xx_hal_gpio.o: \
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
+../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h:

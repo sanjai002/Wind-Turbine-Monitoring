@@ -1,5 +1,5 @@
 Middlewares/ThreadX/Core/tx_event_flags_set_notify.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/threadx/common/src/tx_event_flags_set_notify.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/threadx/common/src/tx_event_flags_set_notify.c \
  ../../../../../../../Middlewares/ST/threadx/common/inc/tx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \

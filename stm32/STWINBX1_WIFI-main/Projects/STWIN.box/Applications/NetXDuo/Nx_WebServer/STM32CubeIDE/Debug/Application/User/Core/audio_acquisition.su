@@ -1,7 +1,7 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:206:13:AudioAcquisition_ThreadEntry	1056	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:64:6:AudioAcquisition_Init	56	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:126:6:AudioAcquisition_Start	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:164:11:AudioAcquisition_GetQueue	0	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:173:10:AudioAcquisition_GetFrameCount	0	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:182:9:AudioAcquisition_IsActive	0	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_acquisition.c:191:10:AudioAcquisition_GetErrorCount	0	static
+../Application/User/Core/audio_acquisition.c:212:13:AudioAcquisition_ThreadEntry	2088	static
+../Application/User/Core/audio_acquisition.c:72:6:AudioAcquisition_Init	56	static
+../Application/User/Core/audio_acquisition.c:134:6:AudioAcquisition_Start	32	static
+../Application/User/Core/audio_acquisition.c:170:11:AudioAcquisition_GetQueue	0	static
+../Application/User/Core/audio_acquisition.c:179:10:AudioAcquisition_GetFrameCount	0	static
+../Application/User/Core/audio_acquisition.c:188:9:AudioAcquisition_IsActive	0	static
+../Application/User/Core/audio_acquisition.c:197:10:AudioAcquisition_GetErrorCount	0	static

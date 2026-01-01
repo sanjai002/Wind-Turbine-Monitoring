@@ -1,6 +1,6 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:27:10:AudioFeatures_Init	0	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:42:10:AudioFeatures_CalculateRMS	32	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:78:10:AudioFeatures_CalculateZCR	0	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:114:10:AudioFeatures_CalculateSPL	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:145:10:AudioFeatures_FindPeakAmplitude	4	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/audio_features.c:174:5:AudioFeatures_ComputeFFTBands	88	static
+../Application/User/Core/audio_features.c:27:10:AudioFeatures_Init	0	static
+../Application/User/Core/audio_features.c:42:10:AudioFeatures_CalculateRMS	24	static
+../Application/User/Core/audio_features.c:78:10:AudioFeatures_CalculateZCR	4	static
+../Application/User/Core/audio_features.c:114:10:AudioFeatures_CalculateSPL	8	static
+../Application/User/Core/audio_features.c:145:10:AudioFeatures_FindPeakAmplitude	0	static
+../Application/User/Core/audio_features.c:174:5:AudioFeatures_ComputeFFTBands	88	static

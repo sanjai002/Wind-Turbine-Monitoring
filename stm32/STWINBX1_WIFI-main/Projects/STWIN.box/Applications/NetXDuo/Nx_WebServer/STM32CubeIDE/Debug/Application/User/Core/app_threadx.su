@@ -1,4 +1,4 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c:207:13:App_Startup_Thread_Entry	32	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c:80:6:App_ThreadX_Init	16	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c:130:6:App_Create_Startup_Thread	64	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/app_threadx.c:177:6:MX_ThreadX_Init	8	static
+../Application/User/Core/app_threadx.c:207:13:App_Startup_Thread_Entry	32	static
+../Application/User/Core/app_threadx.c:80:6:App_ThreadX_Init	16	static
+../Application/User/Core/app_threadx.c:130:6:App_Create_Startup_Thread	64	static
+../Application/User/Core/app_threadx.c:177:6:MX_ThreadX_Init	8	static

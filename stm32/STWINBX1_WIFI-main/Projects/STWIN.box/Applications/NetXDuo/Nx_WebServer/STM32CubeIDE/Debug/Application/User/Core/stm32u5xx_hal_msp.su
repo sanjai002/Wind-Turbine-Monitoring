@@ -1,3 +1,3 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:63:6:HAL_MspInit	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:98:6:HAL_UART_MspInit	240	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:144:6:HAL_UART_MspDeInit	0	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:63:6:HAL_MspInit	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:98:6:HAL_UART_MspInit	240	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/Core/Src/stm32u5xx_hal_msp.c:144:6:HAL_UART_MspDeInit	0	static

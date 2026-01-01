@@ -1,5 +1,5 @@
 Middlewares/FileX/Core/fx_fault_tolerant_read_log_file.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/filex/common/src/fx_fault_tolerant_read_log_file.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/filex/common/src/fx_fault_tolerant_read_log_file.c \
  ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h \
  ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h \
  ../../FileX/App/fx_user.h \

@@ -1,5 +1,5 @@
 Middlewares/Interfaces/Network/wifi/nx_driver_emw3080.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \
@@ -52,6 +52,7 @@ Middlewares/Interfaces/Network/wifi/nx_driver_emw3080.o: \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
+ ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_def.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box.h \
  ../../Core/Inc/STWIN.box_conf.h \
@@ -66,9 +67,9 @@ Middlewares/Interfaces/Network/wifi/nx_driver_emw3080.o: \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_sd.h \
  ../../../../../../../Drivers/BSP/Components/mx_wifi/core/mx_address.h \
  ../../../../../../../Drivers/BSP/Components/mx_wifi/core/mx_address.h \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c \
  ../../../../../../../Drivers/BSP/Components/mx_wifi/io_pattern/mx_wifi_io.h
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h:
 ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:
@@ -123,6 +124,7 @@ Middlewares/Interfaces/Network/wifi/nx_driver_emw3080.o: \
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
+../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_def.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box.h:
 ../../Core/Inc/STWIN.box_conf.h:
@@ -138,7 +140,7 @@ Middlewares/Interfaces/Network/wifi/nx_driver_emw3080.o: \
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_sd.h:
 ../../../../../../../Drivers/BSP/Components/mx_wifi/core/mx_address.h:
 ../../../../../../../Drivers/BSP/Components/mx_wifi/core/mx_address.h:
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h:
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h:
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.h:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.h:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c:
 ../../../../../../../Drivers/BSP/Components/mx_wifi/io_pattern/mx_wifi_io.h:

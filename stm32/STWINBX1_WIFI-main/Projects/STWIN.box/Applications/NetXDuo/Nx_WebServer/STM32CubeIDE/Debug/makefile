@@ -31,22 +31,6 @@ RM := rm -rf
 -include Application/User/AZURE_RTOS/App/subdir.mk
 -include objects.mk
 
-# Re-generate the linker input list from the current $(OBJS).
-# CubeIDE links via @"objects.list".
-#
-# IMPORTANT: $(OBJS) contains escaped spaces (e.g. "NX\ Core") because
-# Cube-generated folder names include spaces. A naive "tr ' ' '\n'" will
-# split those paths and break the link step.
-objects.list: $(OBJS)
-	@rm -f $@
-	@# The linker "@file" syntax splits on whitespace; paths that contain spaces must be quoted per line.
-	@# $(OBJS) contains make-escaped spaces (e.g. NX\ Core). We convert those to real spaces, then wrap each path in quotes.
-	@set -f; \
-	for f in $(OBJS); do \
-		p=`printf '%s' "$$f" | sed -e 's/\\ / /g'`; \
-		printf '"%s"\n' "$$p" >> $@; \
-	done
-
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(S_DEPS)),)
 -include $(S_DEPS)
@@ -93,8 +77,8 @@ all: main-build
 main-build: Nx_WebServer.elf secondary-outputs
 
 # Tool invocations
-Nx_WebServer.elf Nx_WebServer.map: $(OBJS) $(USER_OBJS) /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/STM32CubeIDE/STM32U585AIIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Nx_WebServer.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/STM32CubeIDE/STM32U585AIIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nx_WebServer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Nx_WebServer.elf Nx_WebServer.map: $(OBJS) $(USER_OBJS) /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/STM32CubeIDE/STM32U585AIIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Nx_WebServer.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/STM32CubeIDE/STM32U585AIIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nx_WebServer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

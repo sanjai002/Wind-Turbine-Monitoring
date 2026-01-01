@@ -1,6 +1,6 @@
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:67:9:mx_wifi_hci_init	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:76:9:mx_wifi_hci_deinit	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:83:9:mx_wifi_hci_send	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:129:11:mx_wifi_hci_recv	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:146:6:mx_wifi_hci_free	8	static
-/media/sanjai/New Volume1/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:160:6:mx_wifi_hci_input	16	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:67:9:mx_wifi_hci_init	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:76:9:mx_wifi_hci_deinit	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:83:9:mx_wifi_hci_send	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:129:11:mx_wifi_hci_recv	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:146:6:mx_wifi_hci_free	8	static
+/media/sanjai/New Volume/projects/wind turbine/stm32/STWINBX1_WIFI-main/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:160:6:mx_wifi_hci_input	16	static

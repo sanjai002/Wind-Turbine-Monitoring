@@ -1,5 +1,5 @@
 Middlewares/NetXDuo/Addons DHCP Client/nxd_dhcpv6_client.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.c \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h \
  ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../../Core/Inc/tx_user.h \
@@ -13,7 +13,7 @@ Middlewares/NetXDuo/Addons DHCP Client/nxd_dhcpv6_client.o: \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_ipv4.h \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_ipv6.h \
  ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_udp.h \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.h \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.h \
  ../../../../../../../Middlewares/ST/threadx/common/inc/tx_timer.h
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_api.h:
 ../../../../../../../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:
@@ -28,5 +28,5 @@ Middlewares/NetXDuo/Addons DHCP Client/nxd_dhcpv6_client.o: \
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_ipv4.h:
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_ipv6.h:
 ../../../../../../../Middlewares/ST/netxduo/common/inc/nx_udp.h:
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.h:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.h:
 ../../../../../../../Middlewares/ST/threadx/common/inc/tx_timer.h:

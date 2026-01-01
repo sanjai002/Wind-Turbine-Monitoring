@@ -1,6 +1,6 @@
 Application/User/FileX/Target/fx_stm32_sd_driver_glue.o: \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c \
- /media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver.h \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver_glue.c \
+ /media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver.h \
  ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h \
  ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h \
  ../../FileX/App/fx_user.h \
@@ -49,12 +49,13 @@ Application/User/FileX/Target/fx_stm32_sd_driver_glue.o: \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h \
  ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
+ ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_sd.h \
  ../../Core/Inc/STWIN.box_conf.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_bus.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_errno.h \
  ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_errno.h
-/media/sanjai/New\ Volume1/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver.h:
+/media/sanjai/New\ Volume/projects/wind\ turbine/stm32/STWINBX1_WIFI-main/Projects/STWIN.box/Applications/NetXDuo/Nx_WebServer/FileX/Target/fx_stm32_sd_driver.h:
 ../../../../../../../Middlewares/ST/filex/common/inc/fx_api.h:
 ../../../../../../../Middlewares/ST/filex/ports/generic/inc/fx_port.h:
 ../../FileX/App/fx_user.h:
@@ -103,6 +104,7 @@ Application/User/FileX/Target/fx_stm32_sd_driver_glue.o: \
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h:
 ../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
+../../../../../../../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_mdf.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_sd.h:
 ../../Core/Inc/STWIN.box_conf.h:
 ../../../../../../../Drivers/BSP/STWIN.box/STWIN.box_bus.h:
